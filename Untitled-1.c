@@ -203,12 +203,12 @@ int main() {
             printf("4. Alterar tenis\n");
             printf("5. Remover tenis\n");
             printf("6. Aplicar desconto\n");
-            printf("7. Trocar para comprador\n");  // OPÇÃO ADICIONADA
+            printf("7. Trocar para comprador\n"); 
             printf("8. Sair\n");
         } else {
             printf("1. Listar tenis\n");
             printf("2. Buscar tenis\n");
-            printf("3. Trocar para vendedor\n");  // OPÇÃO ADICIONADA
+            printf("3. Trocar para vendedor\n"); 
             printf("4. Sair\n");
         }
 
@@ -228,10 +228,10 @@ int main() {
                     aplicar_desconto(total_gasto);
                     break;
                 case 7:
-                    strcpy(tipo, "comprador");  // TROCAR PARA COMPRADOR
+                    strcpy(tipo, "comprador");  
                     printf("Trocando para comprador...\n");
                     aguardar();
-                    opcao = 0; // para continuar o loop
+                    opcao = 0; 
                     break;
                 case 8:
                     printf("Encerrando o programa...\n");
@@ -240,15 +240,15 @@ int main() {
                     printf("Opcao invalida!\n");
                     aguardar();
             }
-        } else {  // comprador
+        } else {  
             switch (opcao) {
                 case 1: listar(); break;
                 case 2: buscar(); break;
                 case 3:
-                    strcpy(tipo, "vendedor");  // TROCAR PARA VENDEDOR
+                    strcpy(tipo, "vendedor");  
                     printf("Trocando para vendedor...\n");
                     aguardar();
-                    opcao = 0; // para continuar o loop
+                    opcao = 0; 
                     break;
                 case 4:
                     printf("Encerrando o programa...\n");
